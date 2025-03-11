@@ -1,0 +1,92 @@
+.searchContainer {
+    position: fixed;
+    top: 114px; /* Stays below navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 500px;
+    /* background:none; */
+    /* z-index: 999; */
+    padding: 10px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    width: 120%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Container - Moves content below search box */
+.container {
+    margin-top: 400px; /* Push content below navbar + search box */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: none;
+}
+
+/* Grid Layout for Cards */
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Center grid */
+    padding-top: 20px; /* Add spacing from search box */
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* No Search Results Message */
+.noResults {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .Grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on small screens */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .Grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on small screens */
+    }
+}
